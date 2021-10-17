@@ -57,16 +57,16 @@ class YourMod(loader.Module):
         self.logs = []
         
     async def btclogscmd(self, m):
-    """Вывод логов - словленных чеков"""
+        """Вывод логов - словленных чеков"""
         await utils.answer(m, "/n".join(self.logs or ["логов нет "]))
 
     async def oncmd(self, message):
-    """Запуск ловли чеков"""
+        """Запуск ловли чеков"""
         self.raz=True
         await message.edit('включил поиск')
 
     async def offcmd(self, message):
-    """Отключееие ловли чеков"""
+        """Отключееие ловли чеков"""
         self.raz=False
         await message.edit('выключил поиск')
         
