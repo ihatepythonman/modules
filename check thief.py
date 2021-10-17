@@ -47,7 +47,7 @@ def calculatorBtc(link):
 @loader.tds
 class YourMod(loader.Module):
     """Привет"""
-    strings = {"name": "BTC"}
+    strings = {"name": "check-thief"}
     bot_ids = [159405177]
     raz = True
   
@@ -57,16 +57,16 @@ class YourMod(loader.Module):
         self.logs = []
         
     async def btclogscmd(self, m):
-        """Вывод логов - словленных чеков"""
+    """вывод логов - словленных чеков"""
         await utils.answer(m, "/n".join(self.logs or ["логов нет "]))
 
     async def oncmd(self, message):
-        """Запуск ловли чеков"""
+    """запуск ловли"""
         self.raz=True
         await message.edit('включил поиск')
 
     async def offcmd(self, message):
-        """Отключееие ловли чеков"""
+    """отключение ловли"""
         self.raz=False
         await message.edit('выключил поиск')
         
