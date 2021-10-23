@@ -1,0 +1,14 @@
+bcheck
+backupman
+checktg
+dusers
+moduleinfo
+moduleslink
+searchmusic
+shazam
+check_thief
+cheval
+pervonah
+qiwi
+st0n
+upload_dl
